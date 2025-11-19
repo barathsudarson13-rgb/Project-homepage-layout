@@ -1,0 +1,145 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    color: #da0a0a;
+}
+
+a {
+    color: #22b69d; 
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ 
+
+.site-header {
+    background-color: #491b36;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #58aa7a; 
+}
+
+.main-nav ul {
+    display: flex; 
+    gap: 20px;
+    
+}
+
+.search-bar input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #259abd;
+    color: #f3ecec;
+}
+
+.hero-section {
+    background: url('games.jpg' ) center/cover no-repeat ;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+    width: 1020px 30px;
+    height: 385px ;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #15ceaf;
+    color: rgb(216, 15, 126);
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #30b324f8;
+}
+
+.game-listings {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+.game-card {
+    background-color: #805f4a4f;
+    color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(7, 7, 7, 0.4);
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-download-small {
+    background-color: #a605ac;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-download-small:hover{
+    background-color: #0dafd8;
+}
+
+@media (min-width: 768px) {
+    .game-grid {
+        
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+.site-footer {
+    background-color: #3e3d16;
+    color: #199129;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #06332b;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
